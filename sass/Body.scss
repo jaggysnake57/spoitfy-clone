@@ -1,0 +1,9 @@
+@import '_vars';
+
+.body {
+	flex: 0.8;
+	background: linear-gradient($purple, rgba(0, 0, 0, 1));
+	height: 100vh;
+	color: white;
+	padding: 30px;
+}

@@ -1,0 +1,10 @@
+@import '_vars';
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	height: 65px;
+	width: 100%;
+	background: $grey;
+	padding: 20px;
+}
