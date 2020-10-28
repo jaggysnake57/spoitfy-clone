@@ -4,4 +4,54 @@
   height: 65px;
   width: 100%;
   background: #282828;
-  padding: 20px; }
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; }
+  .footer .albumImage {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 20px; }
+  .footer .songInfo h4 {
+    margin-bottom: 5px; }
+  .footer .songInfo p {
+    font-size: 12px; }
+  .footer .icon {
+    cursor: pointer; }
+    .footer .icon:hover {
+      transition: all 0.2s ease-in-out;
+      transform: scale(1.4) !important;
+      color: #1ed760; }
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  color: white;
+  flex: 0.3;
+  max-width: 400px; }
+
+.footer__center {
+  flex: 0.4;
+  padding: 0 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px; }
+
+.footer__right {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.3;
+  padding-right: 40px;
+  max-width: 400px; }
+  .footer__right * .MuiSlider-root {
+    color: #1ed760; }
+  .footer__right .MuiSlider-thumb:hover {
+    box-shadow: 0px 0px 0px 8px rgba(30, 215, 96, 0.16); }
+  .footer__right .MuiSlider-active {
+    box-shadow: 0px 0px 0px 14px rgba(30, 215, 96, 0.16) !important; }
+  .footer__right .MuiSlider-thumb.Mui-focusVisible {
+    box-shadow: 0px 0px 0px 8px rgba(30, 215, 96, 0.16) !important; }

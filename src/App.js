@@ -21,7 +21,7 @@ function App() {
 				token: _token,
 			});
 		}
-		if (token) {
+		if (token && !user) {
 			spotify.setAccessToken(token);
 			spotify
 				.getMe()
@@ -32,10 +32,30 @@ function App() {
 					});
 				})
 				.catch((error) => {
-					alert(error.response.message);
+					console.warn(error.response);
 				});
 		}
-	}, [token]);
+		console.log({ user });
+		if (user) {
+			spotify.getUserPlaylists().then((playlists) => {
+				dispatch({
+					type: 'SET_PLAYLIST',
+					playlists,
+				});
+			});
+			spotify
+				.getPlaylist('37i9dQZF1DX4DZAVUAwHMT')
+				.then((response) => {
+					dispatch({
+						type: 'SET_DISCOVER_WEEKLY',
+						discover_weekly: response,
+					});
+				})
+				.catch((err) => {
+					console.log(err);
+				});
+		}
+	}, [token, user]);
 
 	return (
 		<div className="App">

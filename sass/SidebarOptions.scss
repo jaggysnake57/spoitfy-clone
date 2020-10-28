@@ -1,9 +1,29 @@
-.sidebarOption {
+@import '_vars';
+
+.sidebarOptions {
 	color: grey;
 	height: 40px;
 	cursor: pointer;
 	transition: 200ms color ease-in;
+	display: flex;
+	align-items: center;
 	&:hover {
-		clear: white;
+		color: white;
+	}
+	& > .icon {
+		padding: 0 10px;
+	}
+	& > p {
+		margin-top: 10px;
+		margin-left: 20px;
+		font-size: 14px;
+	}
+}
+
+.sidebar {
+	& > hr {
+		border: 1px solid $grey;
+		width: 90%;
+		margin: 10px auto;
 	}
 }

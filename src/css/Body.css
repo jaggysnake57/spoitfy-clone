@@ -3,4 +3,38 @@
   background: linear-gradient(#5b5773, black);
   height: 100vh;
   color: white;
-  padding: 30px; }
+  padding: 30px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none; }
+  .body::-webkit-scrollbar {
+    display: none; }
+  .body .songs {
+    margin: 20px -30px; }
+    .body .songs .icons {
+      display: flex;
+      align-items: center; }
+      .body .songs .icons .shuffle {
+        font-size: 80px !important;
+        margin: 20px 0 20px 50px; }
+        .body .songs .icons .shuffle:hover {
+          transition: 0.1s transform ease-in;
+          transform: scale(1.08); }
+      .body .songs .icons .MuiSvgIcon-root {
+        margin-right: 20px; }
+
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px; }
+  .body__info img {
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5); }
+  .body__info .body__infoText {
+    flex: 1; }
+    .body__info .body__infoText h2 {
+      font-size: 48px;
+      margin-bottom: 10px; }
+    .body__info .body__infoText p {
+      font-size: 14px; }

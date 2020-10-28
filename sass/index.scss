@@ -6,3 +6,11 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+
+body::-webkit-scrollbar {
+	display: none;
+}
+html {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}

@@ -1,5 +1,17 @@
+@import '_vars';
 .player {
 	.player__body {
 		display: flex;
+	}
+}
+
+.loading {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color: $grey;
+	h1 {
+		color: white;
+		text-align: center;
 	}
 }
